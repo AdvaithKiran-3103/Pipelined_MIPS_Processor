@@ -44,14 +44,3 @@ The processor follows the classic 5-stage pipeline:
 | R-type | ADD, SUB, AND, SLT, SRL |
 | I-type | ADDI, LOAD, STORE, BEQ |
 | J-type | JUMP |
-
-### Instruction Formats
-
-#### R-type
-
-```text
-[15:12] opcode
-[11:9]  Ra
-[8:6]   Rb
-[5:3]   Rc
-[2:0]   func
