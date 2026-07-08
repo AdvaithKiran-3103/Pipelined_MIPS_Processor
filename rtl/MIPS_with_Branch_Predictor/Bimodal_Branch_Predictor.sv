@@ -40,7 +40,7 @@ module Bimodal_Branch_Predictor(
                          BP[index].target : Inc_PC;
         
         state_next = BP[update_index].state;
-        case((BP[update_index].state))
+        case(BP[update_index].state)
             2'b00   : state_next = update.branch_taken ? 2'b01 : 2'b00;
             2'b01   : state_next = update.branch_taken ? 2'b11 : 2'b00;
             2'b10   : state_next = update.branch_taken ? 2'b11 : 2'b00;
